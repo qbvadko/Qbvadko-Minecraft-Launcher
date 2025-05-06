@@ -17,3 +17,9 @@
 ```bash
 > python3 main.py
 ```
+  
+# Commands:
+- launch  
+- install  
+- info  
+  
