@@ -18,7 +18,7 @@ from faker import Faker
 from minecraft_launcher_lib.utils import get_version_list
 from minecraft_launcher_lib import (fabric, quilt, forge, install)
 
-from test_utils import forge_stable_mc_versions, launch_minecraft
+from utils import forge_stable_mc_versions, launch_minecraft
 
 def info(launcher_settings: dict, executable_args: dict) -> None:
     body_left = Panel(
