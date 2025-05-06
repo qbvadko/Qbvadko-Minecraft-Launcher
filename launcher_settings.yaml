@@ -1,0 +1,7 @@
+last_launch: ''
+launch_after_install: true
+show_in_vanilla:
+- release
+- snapshot
+- old_beta
+- old_alpha
