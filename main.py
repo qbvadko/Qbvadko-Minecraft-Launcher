@@ -6,7 +6,7 @@ from minecraft_launcher_lib.types import MinecraftOptions
 from rich.console import Console
 
 from classes import TrackedDict, Settings
-from test_utils import launch_minecraft
+from utils import launch_minecraft
 from scenarios import launching, installing, info
 
 
