@@ -46,16 +46,16 @@ def info(launcher_settings: dict, executable_args: dict) -> None:
         style=Style(color='red')
     ) 
 
-    body = Layout(ratio=4)
+    body = Layout(ratio=3)
     body.split_row(body_left, body_middle, body_right) 
 
-    footer = Layout(
+    header = Layout(
         renderable=Panel("Qbvadko Minecraft Launcher"),
         ratio=1 
     )
 
     root = Layout()
-    root.split_column(body, footer)
+    root.split_column(header, body)
 
     return root
 
