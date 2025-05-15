@@ -1,24 +1,35 @@
-# Step by Step setup  
+# Setup
+- ## Navigate to the directory of the copied repository 
   
-## Step\#1 - Go to the repo directory  
-  
-## Step\#2 - install dependencies:  
-`pip install -r requirements.txt`  
-  
-## Step\#3 - install a virtual environment:  
-`python -m venv venv`  
-  
-## Step\#4 - activate a virtual environment:  
-- **Linux/macOS**  : `source venv/bin/activate`  
-  
-- **Windows**: `venv\Scripts\activate`  
-  
-## Step\#5 - launch&play:  
-```bash
-> python3 main.py
-```
-  
-# Commands:
+- ## Install dependencies:
+  ```terminal
+  $ pip install -r requirements.txt  
+  ```
+
+- ## Install a virtual environment:
+  ```terminal
+  $ python3 -m venv .venv   
+  ```
+
+
+# Launching
+- ## Activate a virtual environment:
+  **Linux/macOS**
+  ```bash
+  $ source venv/bin/activate
+  ```
+  **Windows**
+  ```terminal
+  $ .venv\Scripts\activate   
+  ```
+
+- ## Launch:
+  ```bash
+  $ python3 main.py
+  ```
+
+
+# Commands list
 - launch  
 - install  
 - info  
