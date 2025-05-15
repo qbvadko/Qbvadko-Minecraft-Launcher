@@ -20,7 +20,7 @@ from minecraft_launcher_lib import (fabric, quilt, forge, install)
 
 from utils import forge_stable_mc_versions, launch_minecraft
 
-def info(launcher_settings: dict, executable_args: dict) -> None:
+def info() -> None:
     body_left = Panel(
         Align.center(
             renderable=Text(f'minecraft_v: 1.21.5\nloader: fabric\nloader_v: 0.12.05', justify='left'), 
@@ -31,15 +31,15 @@ def info(launcher_settings: dict, executable_args: dict) -> None:
     )
     body_middle = Panel(
         Align.left(
-            renderable=Syntax(code='\n'.join([f'{key}: {val}' for key, val in launcher_settings.items()]), lexer='yaml', line_numbers=True, theme='ansi_dark'),
+            renderable=Syntax.from_path('launcher_settings.yaml', line_numbers=True, theme='ansi_dark'),
             vertical='middle'
         ),
-        title='settings.yaml',
+        title='launcher_settings.yaml',
         style=Style(color='magenta')
     )
     body_right = Panel(
         Align.left(
-            renderable=Syntax(code='\n'.join([f'{key}: {val}' for key, val in executable_args.items()]), lexer='yaml', line_numbers=True, theme='ansi_dark'), 
+            renderable=Syntax.from_path('executable_args.yaml', line_numbers=True, theme='ansi_dark'), 
             vertical='middle'
         ),
         title='executable_args.yaml',

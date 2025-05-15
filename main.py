@@ -42,7 +42,7 @@ class Launcher:
             if self.settings['launch_after_install']:
                 launch_minecraft(version, self.executable_args)
         if command == 'info':
-            self.console.print(info(self.settings, self.executable_args), justify="center")       
+            self.console.print(info(), justify="center")       
         if command == 'exit':
             return 0
         return 1
